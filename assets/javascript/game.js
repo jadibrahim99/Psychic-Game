@@ -6,4 +6,11 @@ var guessesLeft = 9;
 var guessedLetters = [];
 var letterToGuess = null;
 
-console.log(alphabet);
+var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+console.log(computerGuess);
+
+
+
+
+
+

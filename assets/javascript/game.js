@@ -1,3 +1,4 @@
+//Variables for the game
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var wins = 0;
 var losses = 0;
@@ -7,7 +8,7 @@ var guessedLetters = [];
 var letterToGuess = null;
 var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 
-
+//Fuctions
 function updateGuessesLeft() {
     // Here we are grabbing the HTML element and setting it equal to the guessesLeft
     document.querySelector('#guessesLeft').innerHTML = "Guesses left: " + guessesLeft;
@@ -34,3 +35,9 @@ var reset = function() {
 }
 updateLetterToGuess();
 updateGuessesLeft();
+
+//Game code
+
+document.onkeyup = function(event) {
+    
+}

@@ -29,3 +29,11 @@ var reset = function () {
     guesssoFar();
 }
 
+document.onkeyup = function (event) {
+    var userGuess = event.key;
+    left--;
+    guessesSoFar.push(userGuess);
+    guesssoFar();
+    guessesLeft();
+   
+};

@@ -36,7 +36,6 @@ document.onkeyup = function (event) {
     guessed();
     guessesLeft();
 
-
     
     // when the user guesses correctly the wins are tallied under the wins html
     if (left > 0) {
